@@ -23,7 +23,7 @@ jobs:
 
     - name: Build executable
       run: |
-        python -m PyInstaller --onefile listener_api_preprompted_with_GUI.py
+        python -m PyInstaller --onefile listener_api_mistral_preprompted_with_GUI.py
         mv dist/listener_api_preprompted_with_GUI ./dist/pirate_counseling
 
     - name: Upload release asset
