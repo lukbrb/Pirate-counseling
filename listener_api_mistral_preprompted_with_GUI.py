@@ -1,13 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
 import os
 import sys
 import subprocess
-import requests
-import customtkinter as ctk
 import threading
 
-# Install missing dependencies automatically
+
 def install_missing_packages():
     required_packages = ["requests", "customtkinter"]
     for package in required_packages:
@@ -18,7 +14,8 @@ def install_missing_packages():
             subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 install_missing_packages()
-
+import requests
+import customtkinter as ctk
 # Mistral API Authentication
 def authenticate_mistral_api():
     return "mKLOkvmMZ0MGXa5XmyDeIPSTGX3f1KjD"
